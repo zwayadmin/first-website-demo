@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="覺知全人測評：從孩子自評和家長觀察，看見六個成長面向。先懂孩子的心，讓陪伴從理解開始。">
+  <meta name="theme-color" content="#c85c28">
+  <title>先懂孩子的心｜覺知全人測評</title>
+  <style>
+    :root { color-scheme: light; --navy: #c85c28; --muted: #607184; --paper: #faf9f5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--navy); font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; -webkit-font-smoothing: antialiased; }
+    .page { width: min(1240px, calc(100% - 96px)); margin: auto; }
+    header { padding: 32px 0; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #c85c281c; }
+    .mark { width: 31px; height: 31px; border: 1px solid var(--navy); border-radius: 50%; display: grid; place-items: center; }
+    .mark::after { content: ""; width: 11px; height: 11px; border-radius: 50%; background: var(--navy); }
+    .brand { font-size: 17px; font-weight: 700; letter-spacing: .12em; }
+    main { min-height: calc(100svh - 178px); display: grid; grid-template-columns: .95fr 1.15fr; align-items: center; gap: 32px; padding: 72px 0 82px; }
+    .eyebrow { margin: 0 0 26px; display: flex; align-items: center; gap: 12px; font-size: 13px; letter-spacing: .2em; }
+    .eyebrow::before { content: ""; width: 30px; height: 1px; background: currentColor; }
+    h1 { margin: 0 0 28px; font-size: clamp(46px, 5.1vw, 74px); font-weight: 600; letter-spacing: -.04em; line-height: 1.3; }
+    .intro { max-width: 390px; margin: 0; color: var(--muted); font-size: 19px; line-height: 1.95; letter-spacing: .025em; }
+    .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 38px; margin-top: 38px; padding: 19px 24px; background: var(--navy); color: white; text-decoration: none; font-size: 16px; border: 1px solid var(--navy); border-radius: 4px; transition: background .2s, transform .2s; }
+    .button:hover { background: #ad481c; transform: translateY(-2px); }
+    .button:focus-visible { outline: 3px solid #bd842f; outline-offset: 5px; }
+    .arrow { font-size: 23px; line-height: 1; }
+    .note { margin: 24px 0 0; font-size: 13px; color: var(--muted); letter-spacing: .09em; }
+    figure { margin: 0; position: relative; }
+    img { display: block; width: 100%; height: auto; border-radius: 50% 50% 8px 8px / 18% 18% 8px 8px; }
+    figcaption { margin-top: 22px; text-align: right; font-size: 13px; letter-spacing: .17em; color: var(--muted); }
+    footer { display: flex; justify-content: space-between; gap: 16px; padding: 23px 0; border-top: 1px solid #c85c281c; font-size: 12px; line-height: 1.8; color: var(--muted); letter-spacing: .08em; }
+    @media (max-width: 760px) {
+      .page { width: calc(100% - 40px); }
+      header { padding: 23px 0; }
+      .brand { font-size: 15px; }
+      main { grid-template-columns: 1fr; gap: 44px; padding: 50px 0 40px; min-height: auto; }
+      h1 { font-size: clamp(40px, 10.6vw, 62px); margin-bottom: 22px; }
+      .eyebrow { margin-bottom: 22px; }
+      .intro { font-size: 17px; max-width: 100%; }
+      .button { margin-top: 28px; }
+      figure { max-width: 580px; }
+      figcaption { font-size: 12px; margin-top: 16px; }
+      footer { flex-wrap: wrap; }
+    }
+    @media (prefers-reduced-motion: reduce) { .button { transition: none; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header aria-label="網站名稱">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="brand">覺知全人測評</span>
+    </header>
+    <main>
+      <section aria-labelledby="title">
+        <p class="eyebrow">讓陪伴，從理解開始</p>
+        <h1 id="title">先懂孩子的心</h1>
+        <p class="intro">從孩子自評和家長觀察，看見六個成長面向。</p>
+        <a class="button" href="https://assessment-shop.z-way-edu.com/">了解測評內容<span class="arrow" aria-hidden="true">↗</span></a>
+        <p class="note">多一份理解，多一點靠近。</p>
+      </section>
+      <figure>
+        <img src="parent-child.png" alt="以藍色與暖橘色水彩描繪的親子相望，象徵理解與陪伴" width="952" height="618" fetchpriority="high">
+        <figcaption>看見孩子，也看見陪伴的方向。</figcaption>
+      </figure>
+    </main>
+    <footer><span>覺知全人測評</span><span>每一份理解，都是陪伴的起點。</span></footer>
+  </div>
+</body>
+</html>
